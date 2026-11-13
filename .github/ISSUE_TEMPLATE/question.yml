@@ -1,0 +1,21 @@
+name: Question
+description: Ask how something works or how to use it
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
+      description: Commands, settings or documentation you've already looked at.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: A release version or a commit SHA, if it matters.
