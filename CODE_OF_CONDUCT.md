@@ -41,6 +41,8 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
+Each of these repositories has a single maintainer, me, so reports reach me. If your report concerns me, or you'd rather not contact me directly, you can report the conduct to GitHub instead at [github.com/contact/report-abuse](https://github.com/contact/report-abuse), which is independent of these projects.
+
 ## Enforcement Guidelines
 
 Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:

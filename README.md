@@ -15,7 +15,7 @@ One place to change them. Every repository follows. Nothing to copy, nothing to 
 <br>
 
 ![defaults](https://img.shields.io/badge/defaults-6_kinds_of_file-e0a82e?style=for-the-badge&labelColor=14161f)
-![issue forms](https://img.shields.io/badge/issue_forms-3-3f9142?style=for-the-badge&labelColor=14161f)
+![issue forms](https://img.shields.io/badge/issue_forms-4-3f9142?style=for-the-badge&labelColor=14161f)
 ![blank issues](https://img.shields.io/badge/blank_issues-off-7cb0ff?style=for-the-badge&labelColor=14161f)
 <br>
 ![code of conduct](https://img.shields.io/badge/code_of_conduct-Contributor_Covenant_2.1-7c5cd6?style=for-the-badge&labelColor=14161f)
@@ -44,10 +44,10 @@ issue chooser, on a new pull request, in the Security tab and in the sidebar. Th
 the other repositories' history, clones or packages.
 
 > [!NOTE]
-> A default never overrides a repository's own file.
-> [drive-berlin](https://github.com/agusgonzaleznic/drive-berlin), for example, keeps its own
-> contributing guide, code of conduct, security policy and templates, and takes only the support
-> page from here.
+> A default never overrides a repository's own file. No public repository here keeps one of its
+> own, so every repository below uses all six defaults. What only one repository needs, such as
+> drive-berlin's rules for sources, lives in that repository's README or `docs/` under another
+> name.
 
 ---
 
@@ -66,7 +66,8 @@ flowchart TD
 | **Issue forms are all or nothing** | A repository with anything in its own `.github/ISSUE_TEMPLATE/`, even a lone `config.yml`, uses none of the forms here |
 | **Any visibility** | Defaults apply to public and private repositories alike. This repository has to stay public for any of it to work |
 | **No default licence** | GitHub can't default a licence, because it has to travel inside each repository's clones and packages. Each repository carries its own `LICENSE` |
-| **Labels must exist** | A form only applies its label where that label exists. `bug`, `enhancement` and `question` exist in every public repository here |
+| **Labels must exist** | A form only applies its label where that label exists. `bug`, `enhancement`, `question` and `documentation` exist in every public repository here |
+| **The name decides** | A repository's own `SECURITY.md`, `CONTRIBUTING.md` or `CODE_OF_CONDUCT.md` in any of the three places replaces the default, so a document that only adds to a default needs another name, such as `docs/development.md` |
 
 Source: GitHub's guide to
 [creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
@@ -78,10 +79,10 @@ Source: GitHub's guide to
 | File | What it does | Where people see it |
 |---|---|---|
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to propose a change: a small fix goes straight to a pull request, anything bigger starts with an issue. One change per pull request, signed commits, squash merges | A link when someone opens an issue or a pull request, and **Contributing** in the sidebar |
-| [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | The [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/), with reports going to the contact details on my profile | **Code of conduct** in the sidebar and the community profile |
-| [`SECURITY.md`](SECURITY.md) | Report a vulnerability privately through the Security tab, never in a public issue | **Security policy** in the Security tab, and a link in the issue chooser |
+| [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | The [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/), with reports going to the contact details on my profile, or to GitHub when a report concerns me | **Code of conduct** in the sidebar and the community profile |
+| [`SECURITY.md`](SECURITY.md) | Report a vulnerability privately through the Security tab, never in a public issue, with best-effort response targets | **Security policy** in the Security tab, and a link in the issue chooser |
 | [`SUPPORT.md`](SUPPORT.md) | Where to ask a question or report a bug, and a plain note that there is no guaranteed response time | **Support** under *Helpful resources* when someone opens an issue |
-| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) | Three forms (bug report, feature request, question) and a `config.yml` that turns blank issues off | The **New issue** chooser |
+| [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) | Four forms (bug report, feature request, question, and incorrect information, which needs a source) and a `config.yml` that turns blank issues off | The **New issue** chooser |
 | [`.github/pull_request_template.md`](.github/pull_request_template.md) | Two sections, *What changed* and *Verification*, and a three-item checklist | The body of every new pull request |
 | [`.github/CODEOWNERS`](.github/CODEOWNERS) | Requests my review on changes to this repository. CODEOWNERS is never a default, so it covers this repository only | This repository's pull requests |
 
@@ -119,23 +120,25 @@ in every public repository here, so a report reaches me directly and stays priva
 2. Choose **Report a vulnerability**.
 3. Describe the problem, how to reproduce it, and what an attacker could do with it.
 
-Fixes go into the default branch and, where a repository publishes releases, into a new release.
-Older commits and releases aren't patched. The full policy is [`SECURITY.md`](SECURITY.md).
+I aim to acknowledge a report within 7 days and assess it within 30: best-effort targets, not a
+service level agreement. Fixes go into the default branch and, where a repository publishes
+releases, into a new release. Older commits and releases aren't patched. The full policy is
+[`SECURITY.md`](SECURITY.md).
 
 ---
 
 ## 📚 Repositories it covers
 
 Every public repository in the account, and what each one takes from here.
-✅ uses the default · 📌 keeps its own
+✅ uses the default
 
 | Repository | What it is | Contributing | Conduct | Security | Support | Issue forms | PR template |
 |---|---|:--:|:--:|:--:|:--:|:--:|:--:|
 | [plex-renamer](https://github.com/agusgonzaleznic/plex-renamer) | Renames a media library to the naming standard Plex publishes, with a journal that can undo any run | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [github-reusable-workflows](https://github.com/agusgonzaleznic/github-reusable-workflows) | The shared GitHub Actions workflows the other repositories call, pinned to full commit SHAs | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [drive-berlin](https://github.com/agusgonzaleznic/drive-berlin) | *Führerschein Hero*: converting a non-EU driving licence in Berlin, with a full theory course in English | 📌 | 📌 | 📌 | ✅ | 📌 | 📌 |
+| [drive-berlin](https://github.com/agusgonzaleznic/drive-berlin) | *Führerschein Hero*: converting a non-EU driving licence in Berlin, with a full theory course in English | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [cvcite](https://github.com/agusgonzaleznic/cvcite) | Builds a truthful, ATS-safe CV from one YAML file | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [terraform-provider-immobilienscout24](https://github.com/agusgonzaleznic/terraform-provider-immobilienscout24) | A Terraform provider for ImmobilienScout24: German property listings as code | ✅ | ✅ | 📌 | ✅ | ✅ | ✅ |
+| [terraform-provider-immobilienscout24](https://github.com/agusgonzaleznic/terraform-provider-immobilienscout24) | A Terraform provider for ImmobilienScout24: German property listings as code | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [terraform-aws-static-website](https://github.com/agusgonzaleznic/terraform-aws-static-website) | A Terraform module for static websites on AWS | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [terraform-aws-s3-bucket](https://github.com/agusgonzaleznic/terraform-aws-s3-bucket) | A Terraform module for S3 buckets | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [mta-sts](https://github.com/agusgonzaleznic/mta-sts) | MTA-STS and TLS-RPT policy hosting that enforces encrypted mail delivery | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
