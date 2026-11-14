@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="A gold shield with a green check mark">
-  <rect width="64" height="64" rx="14" fill="#14161f"/>
-  <path d="M32 9 50 16v14c0 12-7.6 20.6-18 25-10.4-4.4-18-13-18-25V16z" fill="none" stroke="#e0a82e" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M23.5 31.5 29.5 37.5 41 25.5" fill="none" stroke="#3f9142" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="emblem-title">
+  <title id="emblem-title">A charcoal tile with a white shield outline and a coral check mark</title>
+  <rect width="64" height="64" rx="14" fill="#1A1D23"/>
+  <path d="M32 9 50 16v14c0 12-7.6 20.6-18 25-10.4-4.4-18-13-18-25V16z" fill="none" stroke="#FAFAFA" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M23.5 31.5 29.5 37.5 41 25.5" fill="none" stroke="#DE3412" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
