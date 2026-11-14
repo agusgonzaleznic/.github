@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/emblem.svg" width="88" alt="A gold shield with a green check mark">
+<img src="assets/emblem.svg" width="88" alt="A charcoal tile with a white shield outline and a coral check mark">
 
 # 🤝 Community health files
 
@@ -14,13 +14,13 @@ One place to change them. Every repository follows. Nothing to copy, nothing to 
 
 <br>
 
-![defaults](https://img.shields.io/badge/defaults-6_kinds_of_file-e0a82e?style=for-the-badge&labelColor=14161f)
-![issue forms](https://img.shields.io/badge/issue_forms-4-3f9142?style=for-the-badge&labelColor=14161f)
-![blank issues](https://img.shields.io/badge/blank_issues-off-7cb0ff?style=for-the-badge&labelColor=14161f)
+![defaults](https://img.shields.io/badge/defaults-6_kinds_of_file-555D6D?style=for-the-badge&labelColor=1A1D23)
+![issue forms](https://img.shields.io/badge/issue_forms-4-555D6D?style=for-the-badge&labelColor=1A1D23)
+![blank issues](https://img.shields.io/badge/blank_issues-off-555D6D?style=for-the-badge&labelColor=1A1D23)
 <br>
-![code of conduct](https://img.shields.io/badge/code_of_conduct-Contributor_Covenant_2.1-7c5cd6?style=for-the-badge&labelColor=14161f)
-![vulnerability reports](https://img.shields.io/badge/vulnerability_reports-private-3f9142?style=for-the-badge&labelColor=14161f)
-![public repositories](https://img.shields.io/badge/public_repositories-10-e0a82e?style=for-the-badge&labelColor=14161f)
+![code of conduct](https://img.shields.io/badge/code_of_conduct-Contributor_Covenant_2.1-555D6D?style=for-the-badge&labelColor=1A1D23)
+![vulnerability reports](https://img.shields.io/badge/vulnerability_reports-private-555D6D?style=for-the-badge&labelColor=1A1D23)
+![repositories covered](https://img.shields.io/badge/repositories_covered-10-555D6D?style=for-the-badge&labelColor=1A1D23)
 
 <br>
 
@@ -58,6 +58,11 @@ flowchart TD
   A["Someone opens an issue or a pull request,<br/>or reads a repository's Security tab"] --> B{"Does the repository have<br/>its own file of that kind?"}
   B -->|"yes: in .github/, the root or docs/"| C["GitHub uses the<br/>repository's own file"]
   B -->|no| D["GitHub uses the default<br/>from agusgonzaleznic/.github"]
+  classDef default fill:#FFFFFF,stroke:#89909F,color:#1A1D23
+  classDef decide fill:#E9EAED,stroke:#555D6D,color:#1A1D23
+  classDef outcome fill:#FFFFFF,stroke:#DE3412,stroke-width:2px,color:#1A1D23
+  class B decide
+  class D outcome
 ```
 
 | Rule | What it means in practice |
@@ -96,6 +101,10 @@ flowchart LR
   B --> P["③ Open a pull request<br/>from the template"]
   P --> C["④ Checks pass,<br/>commits signed"]
   C --> M["⑤ Review and<br/>squash merge"]
+  classDef default fill:#FFFFFF,stroke:#89909F,color:#1A1D23
+  classDef decide fill:#E9EAED,stroke:#555D6D,color:#1A1D23
+  classDef outcome fill:#FFFFFF,stroke:#DE3412,stroke-width:2px,color:#1A1D23
+  class M outcome
 ```
 
 - **A small fix can skip the issue.** A typo or an obvious bug can go straight to a pull request.
@@ -129,7 +138,7 @@ releases, into a new release. Older commits and releases aren't patched. The ful
 
 ## 📚 Repositories it covers
 
-Every public repository in the account, and what each one takes from here.
+Every public repository in the account except this one, and what each one takes from here.
 ✅ uses the default
 
 | Repository | What it is | Contributing | Conduct | Security | Support | Issue forms | PR template |
@@ -180,18 +189,18 @@ The projects here are free, and they stay free. Three things help, in ascending 
 - **Star the repositories you use.** It's the only signal that tells the next person they exist.
 - **Open an issue when something is wrong**, with the form that fits. A precise report with the
   steps to reproduce it is the most useful contribution anyone can make.
-- **Drop a coffee on Ko-fi, or sponsor on GitHub.** Ko-fi is a one-off, GitHub Sponsors can be
-  monthly, and both accept a custom amount.
+- **Drop a coffee on Ko-fi, or sponsor on GitHub.** Ko-fi is a one-off, and GitHub Sponsors can
+  be monthly or one-time, with a custom amount.
 
 <div align="center">
 <br>
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-one--off-e0a82e?style=for-the-badge&labelColor=14161f&logo=kofi&logoColor=e0a82e)](https://ko-fi.com/agusgonzaleznic)
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-monthly-e0a82e?style=for-the-badge&labelColor=14161f&logo=githubsponsors&logoColor=e0a82e)](https://github.com/sponsors/agusgonzaleznic)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-one--off-555D6D?style=for-the-badge&labelColor=1A1D23&logo=kofi&logoColor=FAFAFA)](https://ko-fi.com/agusgonzaleznic)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-monthly-555D6D?style=for-the-badge&labelColor=1A1D23&logo=githubsponsors&logoColor=FAFAFA)](https://github.com/sponsors/agusgonzaleznic)
 <br>
-[![website](https://img.shields.io/badge/website-agusgonzaleznic.com-7c5cd6?style=for-the-badge&labelColor=14161f)](https://agusgonzaleznic.com)
-[![GitHub](https://img.shields.io/badge/GitHub-agusgonzaleznic-1d2130?style=for-the-badge&labelColor=14161f&logo=github&logoColor=white)](https://github.com/agusgonzaleznic)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-agusgonzaleznic-7cb0ff?style=for-the-badge&labelColor=14161f&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/agusgonzaleznic)
+[![website](https://img.shields.io/badge/website-agusgonzaleznic.com-555D6D?style=for-the-badge&labelColor=1A1D23)](https://agusgonzaleznic.com)
+[![GitHub](https://img.shields.io/badge/GitHub-agusgonzaleznic-555D6D?style=for-the-badge&labelColor=1A1D23&logo=github&logoColor=FAFAFA)](https://github.com/agusgonzaleznic)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-agusgonzaleznic-555D6D?style=for-the-badge&labelColor=1A1D23)](https://www.linkedin.com/in/agusgonzaleznic)
 
 <br>
 
