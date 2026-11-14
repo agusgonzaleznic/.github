@@ -1,0 +1,51 @@
+name: Incorrect information
+description: Something the project states is wrong or out of date, with the source that shows it
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when something the project states is wrong: a number, a date, a fee, a rule, an
+        address, or a description that no longer matches what the project does. It needs a source,
+        because a claim that can't be traced to one doesn't get changed. If you're fairly sure
+        something is wrong but can't find a source, please open a bug report that describes the
+        doubt instead. Flagging an uncertain claim is useful on its own.
+  - type: textarea
+    id: wrong-claim
+    attributes:
+      label: Which statement is wrong?
+      description: Quote it as it appears now, as exactly as you can.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where does it appear?
+      description: A file path, a page or a screen, or a link to it.
+    validations:
+      required: true
+  - type: textarea
+    id: correct-info
+    attributes:
+      label: What is correct?
+      description: State the correct information precisely. When the source is a law or another official text, quote it word for word.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A direct link to the most authoritative source you can find, at the specific page or provision rather than a homepage. A repository's README or docs may say which sources it accepts.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: date-read
+    attributes:
+      label: Date you read the source
+      description: As YYYY-MM-DD. Fees, dates and rules change, so the date matters.
+  - type: textarea
+    id: more-sources
+    attributes:
+      label: Further sources
+      description: Any other links that support the correction.
